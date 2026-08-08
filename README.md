@@ -1,5 +1,8 @@
 # Nation Flag System
 
+[![release](https://github.com/metricrb/nation-flag-system/actions/workflows/release.yml/badge.svg)](https://github.com/metricrb/nation-flag-system/actions/workflows/release.yml)
+[![publish-docs](https://github.com/metricrb/nation-flag-system/actions/workflows/publish-docs.yml/badge.svg)](https://github.com/metricrb/nation-flag-system/actions/workflows/publish-docs.yml)
+
 ProximityPrompt + searchable ScreenGui for setting flag-hall poles to any nation.
 
 Docs are built with [Moonwave](https://eryn.io/moonwave/) — see [`docs/`](docs/intro.md) and run `moonwave dev`.

@@ -79,10 +79,10 @@ export type Config = {
 }
 
 local Config: Config = {
-	AuthMode = "Either",
+	AuthMode = "Either", -- "Group" | "Team" | "Either" | "Anyone"
 	GroupId = 0,
 	MinGroupRank = 1,
-	TeamName = "Staff",
+	TeamName = "Foreign Affairs",
 
 	FlagFolderPath = "Workspace.Flags",
 	CollectionTag = "CustomizableFlag",
