@@ -20,4 +20,5 @@ sidebar_position: 1
 - [Installation](./installation)
 - [Configuration](./configuration)
 - [Authorization](./authorization)
+- [Custom mesh flag integration](./custom-meshes)
 - [API](/api/Config)

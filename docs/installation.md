@@ -49,4 +49,6 @@ rojo build release.project.json --output nation-flag-system.rbxm
 4. Edit [`Config`](/api/Config) for auth defaults.
 5. Create a Team named `Staff` (or change `Config.TeamName`) if using Team / Either mode.
 
+Custom draped meshes: see [Custom mesh flag integration](./custom-meshes) (`TextureID` only).
+
 `FlagService` starts automatically as a Script under `ServerScriptService.NationFlagSystem`.
