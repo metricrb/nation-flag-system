@@ -1,0 +1,27 @@
+{
+  "name": "nation-flag-system",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "NationFlagSystem": {
+        "$path": "src/ReplicatedStorage/NationFlagSystem"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "NationFlagSystem": {
+        "$path": "src/ServerScriptService/NationFlagSystem"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "NationFlagSystem": {
+          "$path": "src/StarterPlayerScripts/NationFlagSystem"
+        }
+      }
+    }
+  }
+}

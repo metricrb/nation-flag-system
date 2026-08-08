@@ -1,0 +1,22 @@
+# Dependencies / toolchain
+node_modules/
+.moonwave/
+build/
+dist/
+
+# Moonwave / Docusaurus
+docs/build/
+docs/.docusaurus/
+docs/node_modules/
+moonwave-docs/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Generated packages
+*.rbxm
+*.rbxmx
+nation-flag-system.rbxm

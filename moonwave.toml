@@ -1,0 +1,41 @@
+title = "Nation Flag System"
+gitRepoUrl = "https://github.com/metricrb/nation-flag-system"
+gitSourceBranch = "main"
+changelog = false
+
+[docusaurus]
+tagline = "ProximityPrompt flag customization for visiting delegates"
+url = "https://metricrb.github.io"
+baseUrl = "/nation-flag-system"
+
+[home]
+enabled = true
+includeReadme = true
+
+[[home.features]]
+title = "Group or team auth"
+description = "Bind flag changes to a Roblox group, a Team, either, or anyone — globally or per pole."
+
+[[home.features]]
+title = "Full nation catalog"
+description = "Searchable picker backed by world flag textures plus every passport-system asset nation."
+
+[[home.features]]
+title = "Drop-in poles"
+description = "Auto-wires Workspace.Flags and any Model tagged CustomizableFlag."
+
+[[classOrder]]
+section = "Shared"
+classes = ["Config", "Types", "Nations", "PassportExtras", "WorldFlags"]
+
+[[classOrder]]
+section = "Server"
+classes = ["FlagAuth", "FlagRegistry", "FlagService"]
+
+[[classOrder]]
+section = "Client"
+classes = ["FlagPicker"]
+
+[footer]
+style = "dark"
+copyright = "Copyright © Nation Flag System contributors. Built with Moonwave."
