@@ -1,10 +1,9 @@
 # Dependencies / toolchain
 node_modules/
-.moonwave/
 build/
 dist/
 
-# Moonwave / Docusaurus
+# Moonwave / Docusaurus build output (keep .moonwave/ overrides tracked)
 docs/build/
 docs/.docusaurus/
 docs/node_modules/

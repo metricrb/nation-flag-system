@@ -1,0 +1,78 @@
+/**
+ * Fix code-block contrast (Moonwave/Docusaurus often pairs light page
+ * backgrounds with dark Prism token colors → white-on-white).
+ */
+
+/* Fenced code blocks: always dark surface + light text */
+.theme-code-block,
+div[class*="codeBlockContainer"],
+pre {
+	background-color: #1e1e2e !important;
+	color: #e2e8f0 !important;
+	border: 1px solid #313244;
+	border-radius: 8px;
+}
+
+.theme-code-block pre,
+.theme-code-block code,
+div[class*="codeBlockContent"],
+pre code {
+	background-color: transparent !important;
+	color: #e2e8f0 !important;
+	text-shadow: none !important;
+}
+
+/* Keep token highlights readable on the dark surface */
+.theme-code-block .token.comment,
+pre .token.comment {
+	color: #7f849c !important;
+}
+
+.theme-code-block .token.string,
+.theme-code-block .token.attr-value,
+pre .token.string {
+	color: #a6e3a1 !important;
+}
+
+.theme-code-block .token.function,
+.theme-code-block .token.builtin,
+pre .token.function {
+	color: #89b4fa !important;
+}
+
+.theme-code-block .token.keyword,
+pre .token.keyword {
+	color: #cba6f7 !important;
+}
+
+.theme-code-block .token.number,
+pre .token.number {
+	color: #fab387 !important;
+}
+
+.theme-code-block .token.plain,
+.theme-code-block .token.punctuation,
+pre .token.plain {
+	color: #e2e8f0 !important;
+}
+
+/* Inline `code` — high contrast chips */
+:not(pre) > code {
+	background-color: #f1f5f9 !important;
+	color: #0f172a !important;
+	border: 1px solid #cbd5e1;
+	border-radius: 4px;
+	padding: 0.1rem 0.35rem;
+	font-size: 0.9em;
+}
+
+html[data-theme="dark"] :not(pre) > code {
+	background-color: #313244 !important;
+	color: #e2e8f0 !important;
+	border-color: #45475a;
+}
+
+/* Tables stay readable */
+table code {
+	white-space: nowrap;
+}
