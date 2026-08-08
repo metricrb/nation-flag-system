@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="plugin-moonwave plugin-id-moonwave" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.1">
+<title data-rh="true">Config | Nation Flag System</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://metricrb.github.io/nation-flag-system/api/Config"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Config | Nation Flag System"><meta data-rh="true" name="description" content="Global defaults for authorization, flag discovery, and prompts.
+Override per pole with Attributes (`AuthMode`, `GroupId`, `MinGroupRank`, `TeamName`)."><meta data-rh="true" property="og:description" content="Global defaults for authorization, flag discovery, and prompts.
+Override per pole with Attributes (`AuthMode`, `GroupId`, `MinGroupRank`, `TeamName`)."><link data-rh="true" rel="canonical" href="https://metricrb.github.io/nation-flag-system/api/Config"><link data-rh="true" rel="alternate" href="https://metricrb.github.io/nation-flag-system/api/Config" hreflang="en"><link data-rh="true" rel="alternate" href="https://metricrb.github.io/nation-flag-system/api/Config" hreflang="x-default"><link rel="stylesheet" href="/nation-flag-system/assets/css/styles.5ec48d9a.css">
+<script src="/nation-flag-system/assets/js/runtime~main.853465fc.js" defer="defer"></script>
+<script src="/nation-flag-system/assets/js/main.61deae0b.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/nation-flag-system/"><b class="navbar__title text--truncate">Nation Flag System</b></a><a class="navbar__item navbar__link" href="/nation-flag-system/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/nation-flag-system/api/">API</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/metricrb/nation-flag-system" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0 docPageContainer_wNNk"><div class="docPage_Dpn1"><div class="docSidebarContainer_o_re"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/nation-flag-system/api/Config"><span title="Shared" class="categoryLinkLabel_W154">Shared</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/nation-flag-system/api/Config"><span title="​Config" class="linkLabel_WmDU">​Config</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/nation-flag-system/api/Types"><span title="​Types" class="linkLabel_WmDU">​Types</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/nation-flag-system/api/Nations"><span title="​Nations" class="linkLabel_WmDU">​Nations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/nation-flag-system/api/PassportExtras"><span title="​Passport​Extras" class="linkLabel_WmDU">​Passport​Extras</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/nation-flag-system/api/WorldFlags"><span title="​World​Flags" class="linkLabel_WmDU">​World​Flags</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/nation-flag-system/api/FlagAuth"><span title="Server" class="categoryLinkLabel_W154">Server</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/nation-flag-system/api/FlagPicker"><span title="Client" class="categoryLinkLabel_W154">Client</span></a></div></li></ul></nav></div></div><main class="docMainContainer_HJE1"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_MU3C"><div class="docItemContainer_Wv98"><article><div class="member_J0w1 markdown"><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_oUs_"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><header><h1 class="docTitle_mZRt" style="text-decoration:none"><span style="display:inline-block">Config</span></h1><div class="luaClassTags_EipM"></div><div>
+<p>
+  Global defaults for authorization, flag discovery, and prompts.
+  Override per pole with Attributes (<code>AuthMode</code>, <code>GroupId</code>, <code>MinGroupRank</code>, <code>TeamName</code>).
+</p>
+</div></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="properties">Properties<a href="#properties" class="hash-link" aria-label="Direct link to Properties" title="Direct link to Properties" translate="no">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="AuthMode"><code style="text-decoration:none">AuthMode</code><a href="#AuthMode" class="hash-link" aria-label="Direct link to AuthMode" title="Direct link to AuthMode" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L16"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->AuthMode<!-- -->:<!-- --> </code> <code class="blue_P4bS">Types.AuthMode</code></div><div>
+<p>Default auth mode. <code>"Either"</code> allows group <strong>or</strong> team.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="GroupId"><code style="text-decoration:none">GroupId</code><a href="#GroupId" class="hash-link" aria-label="Direct link to GroupId" title="Direct link to GroupId" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L22"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->GroupId<!-- -->:<!-- --> </code> <code class="blue_P4bS">number</code></div><div>
+<p>Roblox group id. <code>0</code> disables the group check.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="MinGroupRank"><code style="text-decoration:none">MinGroupRank</code><a href="#MinGroupRank" class="hash-link" aria-label="Direct link to MinGroupRank" title="Direct link to MinGroupRank" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L28"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->MinGroupRank<!-- -->:<!-- --> </code> <code class="blue_P4bS">number</code></div><div>
+<p>Minimum rank required in <code>GroupId</code>.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="TeamName"><code style="text-decoration:none">TeamName</code><a href="#TeamName" class="hash-link" aria-label="Direct link to TeamName" title="Direct link to TeamName" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L34"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->TeamName<!-- -->:<!-- --> </code> <code class="blue_P4bS">string</code></div><div>
+<p>Exact <code>Team.Name</code> for team authorization.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="FlagFolderPath"><code style="text-decoration:none">FlagFolderPath</code><a href="#FlagFolderPath" class="hash-link" aria-label="Direct link to FlagFolderPath" title="Direct link to FlagFolderPath" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L40"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->FlagFolderPath<!-- -->:<!-- --> </code> <code class="blue_P4bS">string</code></div><div>
+<p>Dot path from <code>game</code> to the folder of flag Models (default <code>Workspace.Flags</code>).</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="CollectionTag"><code style="text-decoration:none">CollectionTag</code><a href="#CollectionTag" class="hash-link" aria-label="Direct link to CollectionTag" title="Direct link to CollectionTag" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L46"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->CollectionTag<!-- -->:<!-- --> </code> <code class="blue_P4bS">string</code></div><div>
+<p>CollectionService tag for poles outside the flag folder.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="PromptActionText"><code style="text-decoration:none">PromptActionText</code><a href="#PromptActionText" class="hash-link" aria-label="Direct link to PromptActionText" title="Direct link to PromptActionText" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L51"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->PromptActionText<!-- -->:<!-- --> </code> <code class="blue_P4bS">string</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="PromptMaxDistance"><code style="text-decoration:none">PromptMaxDistance</code><a href="#PromptMaxDistance" class="hash-link" aria-label="Direct link to PromptMaxDistance" title="Direct link to PromptMaxDistance" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L56"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->PromptMaxDistance<!-- -->:<!-- --> </code> <code class="blue_P4bS">number</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="PromptHoldDuration"><code style="text-decoration:none">PromptHoldDuration</code><a href="#PromptHoldDuration" class="hash-link" aria-label="Direct link to PromptHoldDuration" title="Direct link to PromptHoldDuration" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L61"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->PromptHoldDuration<!-- -->:<!-- --> </code> <code class="blue_P4bS">number</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="DenyMessage"><code style="text-decoration:none">DenyMessage</code><a href="#DenyMessage" class="hash-link" aria-label="Direct link to DenyMessage" title="Direct link to DenyMessage" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/metricrb/nation-flag-system/blob/main/src/ReplicatedStorage/NationFlagSystem/Config.luau#L67"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Config<!-- -->.<!-- -->DenyMessage<!-- -->:<!-- --> </code> <code class="blue_P4bS">string</code></div><div>
+<p>Toast shown when a player is not authorized.</p>
+</div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
+    &quot;functions&quot;: [],
+    &quot;properties&quot;: [
+        {
+            &quot;name&quot;: &quot;AuthMode&quot;,
+            &quot;desc&quot;: &quot;Default auth mode. `\&quot;Either\&quot;` allows group **or** team.&quot;,
+            &quot;lua_type&quot;: &quot;Types.AuthMode&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 16,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;GroupId&quot;,
+            &quot;desc&quot;: &quot;Roblox group id. `0` disables the group check.&quot;,
+            &quot;lua_type&quot;: &quot;number&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 22,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;MinGroupRank&quot;,
+            &quot;desc&quot;: &quot;Minimum rank required in `GroupId`.&quot;,
+            &quot;lua_type&quot;: &quot;number&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 28,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;TeamName&quot;,
+            &quot;desc&quot;: &quot;Exact `Team.Name` for team authorization.&quot;,
+            &quot;lua_type&quot;: &quot;string&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 34,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;FlagFolderPath&quot;,
+            &quot;desc&quot;: &quot;Dot path from `game` to the folder of flag Models (default `Workspace.Flags`).&quot;,
+            &quot;lua_type&quot;: &quot;string&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 40,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;CollectionTag&quot;,
+            &quot;desc&quot;: &quot;CollectionService tag for poles outside the flag folder.&quot;,
+            &quot;lua_type&quot;: &quot;string&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 46,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;PromptActionText&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;lua_type&quot;: &quot;string&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 51,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;PromptMaxDistance&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;lua_type&quot;: &quot;number&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 56,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;PromptHoldDuration&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;lua_type&quot;: &quot;number&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 61,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;DenyMessage&quot;,
+            &quot;desc&quot;: &quot;Toast shown when a player is not authorized.&quot;,
+            &quot;lua_type&quot;: &quot;string&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 67,
+                &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+            }
+        }
+    ],
+    &quot;types&quot;: [],
+    &quot;name&quot;: &quot;Config&quot;,
+    &quot;desc&quot;: &quot;Global defaults for authorization, flag discovery, and prompts.\nOverride per pole with Attributes (`AuthMode`, `GroupId`, `MinGroupRank`, `TeamName`).&quot;,
+    &quot;source&quot;: {
+        &quot;line&quot;: 10,
+        &quot;path&quot;: &quot;src/ReplicatedStorage/NationFlagSystem/Config.luau&quot;
+    }
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#AuthMode" class="table-of-contents__link toc-highlight">AuthMode</a></li><li><a href="#CollectionTag" class="table-of-contents__link toc-highlight">CollectionTag</a></li><li><a href="#DenyMessage" class="table-of-contents__link toc-highlight">DenyMessage</a></li><li><a href="#FlagFolderPath" class="table-of-contents__link toc-highlight">FlagFolderPath</a></li><li><a href="#GroupId" class="table-of-contents__link toc-highlight">GroupId</a></li><li><a href="#MinGroupRank" class="table-of-contents__link toc-highlight">MinGroupRank</a></li><li><a href="#PromptActionText" class="table-of-contents__link toc-highlight">PromptActionText</a></li><li><a href="#PromptHoldDuration" class="table-of-contents__link toc-highlight">PromptHoldDuration</a></li><li><a href="#PromptMaxDistance" class="table-of-contents__link toc-highlight">PromptMaxDistance</a></li><li><a href="#TeamName" class="table-of-contents__link toc-highlight">TeamName</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © Nation Flag System contributors. Built with Moonwave.</div></div></div></footer></div>
+</body>
+</html>
